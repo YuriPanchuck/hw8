@@ -1,0 +1,18 @@
+.hero-pre__title {
+  @include font(14px, null, 1.14, 0.03em);
+  font-weight: bold;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(title);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.hero-after__title {
+  @include font(14px, null, 1.71, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}

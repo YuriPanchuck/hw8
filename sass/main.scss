@@ -1,0 +1,23 @@
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+@import "./utils/hidden";
+
+//components
+@import "./components/container";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/hero-title";
+@import "./components/socials";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./layout/project";
+@import "./layout/footer";

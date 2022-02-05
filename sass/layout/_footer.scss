@@ -1,0 +1,119 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.footer__container {
+  display: flex;
+}
+.footer__first {
+  margin-right: 70px;
+}
+.footer__list {
+  width: 231px;
+}
+.footer__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  @include font(26px, null, 1.19, 0.03em);
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer__map {
+  font-family: inherit;
+  font-style: normal;
+  @include font(14px, null, 1.71, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+  color: var(--first-title-color);
+}
+.footer__tel,
+.footer__mail {
+  font-family: inherit;
+  font-style: normal;
+  @include font(14px, null, 1.71, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo__second {
+  color: var(--first-title-color);
+}
+.footer__light {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer__logo {
+  margin-bottom: 30px;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__second {
+  vertical-align: baseline;
+}
+.footer__third {
+  vertical-align: baseline;
+  margin-left: 93px;
+}
+
+.footer__item {
+  &:hover,
+  &:focus {
+    box-sizing: border-box;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.link__backgrong {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--first-title-color);
+}
+
+.footer__four {
+  vertical-align: baseline;
+  margin-left: 12px;
+}
+.footer-title__first {
+  margin-bottom: 36px;
+}
+.form__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid#999999;
+  background-color: #2f303a;
+  border-radius: 5px;
+  padding-left: 16px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 500ms;
+}
+.footer__title {
+  font-weight: bold;
+  @include font(14px, null, 1.14, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-color);
+  margin-bottom: 20px;
+}
+.footer-social-icon__first {
+  fill: currentColor;
+  margin-left: 10px;
+}
