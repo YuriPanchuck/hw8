@@ -1,14 +1,38 @@
-.portfolio-button {
+.portfolio__button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.button-list {
+.button__list {
   list-style: none;
   display: flex;
   text-align: center;
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    // flex-wrap: nowrap;
+    justify-content: left;
+    width: calc(100% / 2 - 30px);
+    &:not(:nth-last-child(3n)) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    justify-content: center;
+  }
 }
-.portfolio-button-list:not(:last-child) {
+// .portfolio-button__list {
+//   width: calc(100% / 3 - 30px);
+//   &:not(:nth-last-child(3n)) {
+//     margin-left: 30px;
+//   }
+// }
+
+.portfolio-button__list:not(:last-child) {
   margin-right: 8px;
 }

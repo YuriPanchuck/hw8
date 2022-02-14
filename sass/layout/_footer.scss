@@ -4,10 +4,23 @@
   background-color: #2f303a;
 }
 .footer__container {
-  display: flex;
+  @include tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include tab {
+  }
+  @include desk {
+    display: flex;
+  }
 }
 .footer__first {
-  margin-right: 70px;
+  align-items: center;
+  justify-content: center;
+  // margin-right: 70px;
 }
 .footer__list {
   width: 231px;
@@ -20,6 +33,11 @@
   // line-height: 1.19;
   // letter-spacing: 0.03em;
   color: var(--accent-color);
+  @include tel {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .footer__map {
   font-family: inherit;

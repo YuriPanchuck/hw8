@@ -8,6 +8,7 @@
   color: var(title);
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .hero-after__title {
   @include font(14px, null, 1.71, 0.03em);
@@ -15,4 +16,7 @@
   // line-height: 1.71;
   // letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+.hero-after__title:not(:last-child) {
+  padding-bottom: 30px;
 }

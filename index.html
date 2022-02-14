@@ -28,7 +28,7 @@
             </div>
         </nav>
             <div class="header__connect">
-            <ul class="header__list list">
+            <ul class="header__list-connect list">
                 <div class="header__item-content-first">
                 <li class="header__item list">
                     <div class="header-item__content">
@@ -55,6 +55,53 @@
                 </div>
             </ul>
             </div>
+            <div>
+                <button type="button" class="menu-open-btn" data-menu-open>
+                    <svg class="input-icon-second" width="16" height="24">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container-mob">
+                    <div class="mob-menu-top">
+                        <button type="button" class="menu-close-btn" data-menu-close>
+                            <svg class="input-icon-second" width="11" height="11">
+                                <use href="./images/icons.svg#icon-exit"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="./index.html">Студия</a></li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="#contacts">Контакты</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <div class="mob-connect mob-menu__connect">
+                            <a class="link mob-connect__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </div>
+                        <div class="mob-connect mob-menu__connect">
+                            <a class="link mob-connect__mail" href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                        
+                        <ul class="list mob-social">
+                            <li class="mob-social__item">
+                                <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -62,6 +109,21 @@
             <div class="hero__container container">
             <h1 class="hero__title post__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="pointer hero__btn post__title" data-modal-open>Заказать услугу</button>
+            <!-- <picture>
+                <source srcset="
+                                ../hw8/images/hero-bg-desk-1x.jpg 1x,
+                                ../hw8/images/hero-bg-desk-2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+                <source srcset="
+                                ../hw8/images/hero-bg-tab-1x.jpg 1x,
+                                ../hw8/images/hero-bg-tab-2x.jpg 2x
+                              " media="(min-width: 768px)" />
+                <source srcset="../hw8/images/hero-bg-mob-1x.jpg 1x,
+                                ../hw8/images/hero-bg-mob-2x.jpg 2x
+                              " media="(min-width: 320px)" />
+            
+                <img src="../hw8/images/hero-bg-desk-1x.jpg" alt="" />
+            </picture> -->
         </div>
         </section>
         <section class="hero__list">
@@ -147,7 +209,19 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="list team__list">
                 <li class="team__item">
-                    <img class="team__image" src="./images/card1.jpg" alt="" width="270" height="260" />
+                        <source srcset="
+                                        /images/team/team1-desk-1x.jpg 1x,
+                                        /images/team/team1-desk-2x.jpg 2x
+                                    " media="(min-width: 1200px)" />
+                        <source srcset="
+                                        /images/team/team1-tab-1x.jpg 1x,
+                                        /images/team/team1-tab-2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                        <source srcset="/images/team/team1-mob-1x.jpg 1x,
+                                        /images/team/team1-mob-2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                    
+                        <img src="/images/team/team1-desk-1x.jpg" alt="" />
                     <div class="team-item__content">
                         <h3 class="team__name post__title">Игорь Демьяненко</h3>
                         <p class="team__profession post__title" lang="en">Product Designer</p>
@@ -184,7 +258,19 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/card2.jpg" alt="" width="270" height="260" />
+                    <source srcset="
+                                                            /images/team/team2-desk-1x.jpg 1x,
+                                                            /images/team/team2-desk-2x.jpg 2x
+                                                        " media="(min-width: 1200px)" />
+                    <source srcset="
+                                                            /images/team/team2-tab-1x.jpg 1x,
+                                                            /images/team/team2-tab-2x.jpg 2x
+                                                        " media="(min-width: 768px)" />
+                    <source srcset="/images/team/team1-mob-2x.jpg 1x,
+                                                            /images/team/team2-mob-2x.jpg 2x
+                                                        " media="(min-width: 320px)" />
+                    
+                    <img src="/images/team/team2-desk-1x.jpg" alt="" />
                     <div class="team-item__content">
                     <h3 class="team__name post__title">Ольга Репина</h3>
                     <p class="team__profession post__title" lang="en">Frontend Developer</p>
@@ -221,7 +307,19 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/card3.jpg" alt="" width="270" height="260" />
+                                <source srcset="
+                                                                        /images/team/team3-desk-1x.jpg 1x,
+                                                                        /images/team/team3-desk-2x.jpg 2x
+                                                                    " media="(min-width: 1200px)" />
+                                <source srcset="
+                                                                        /images/team/team3-tab-1x.jpg 1x,
+                                                                        /images/team/team3-tab-2x.jpg 2x
+                                                                    " media="(min-width: 768px)" />
+                                <source srcset="/images/team/team3-mob-1x.jpg 1x,
+                                                                        /images/team/team3-mob-2x.jpg 2x
+                                                                    " media="(min-width: 320px)" />
+                                
+                                <img src="/images/team/team3-desk-1x.jpg" alt="" />
                     <div class="team-item__content">
                     <h3 class="team__name post__title">Николай Тарасов</h3>
                     <p class="team__profession post__title" lang="en">Marketing</p>
@@ -258,7 +356,19 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/card4.jpg" alt="" width="270" height="260" />
+                    <source srcset="
+                                                            /images/team/team4-desk-1x.jpg 1x,
+                                                            /images/team/team4-desk-2x.jpg 2x
+                                                        " media="(min-width: 1200px)" />
+                    <source srcset="
+                                                            /images/team/team4-tab-1x.jpg 1x,
+                                                            /images/team/team4-tab-2x.jpg 2x
+                                                        " media="(min-width: 768px)" />
+                    <source srcset="/images/team/team4-mob-1x.jpg 1x,
+                                                            /images/team/team4-mob-2x.jpg 2x
+                                                        " media="(min-width: 320px)" />
+                    
+                    <img src="/images/team/team4-desk-1x.jpg" alt="" />
                     <div class="team-item__content">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__profession" lang="en">UI Designer</p>
@@ -466,7 +576,7 @@
                         <textarea name="user-text" id="user-text" class="form-text" placeholder="Введите текст"></textarea>
                     </div>
                     <div class="form-field-second">
-                        <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden" />
+                        <input type="checkbox" name="policy" id="policy" class="policy-check visually__hidden" />
                         <label for="policy" class="check-text">
         
                             <span><svg class="policy-icon" width="16" height="15">
@@ -483,5 +593,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>

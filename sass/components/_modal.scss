@@ -12,7 +12,7 @@
   }
 }
 .modal {
-  width: 528px;
+  width: 90vw;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -22,6 +22,12 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
   padding: 40px 39px 40px 41px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .modal__close {
   width: 30px;
@@ -143,6 +149,11 @@
 }
 .policy-icon {
   fill: transparent;
+  box-sizing: border-box;
+
+  // border: none;
+  border: 1px solid #212121;
+  margin-right: 8px;
 }
 .policy-check:checked {
   & + .check-text span {

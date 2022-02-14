@@ -15,17 +15,33 @@
   color: var(--second-title-color);
 }
 
-.project-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 .project-item {
-  width: calc(100 / 3 -30px);
-  max-width: 100%;
+  // width: calc(100 / 3 -30px);
+  // max-width: 100%;
   margin-bottom: 30px;
   position: relative;
-  &:not(:nth-last-child(3n)) {
-    margin-left: 30px;
+
+  // &:not(:nth-last-child(3n)) {
+  //   margin-left: 30px;
+  // }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    &:not(:nth-last-child(3n)) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 -30px);
+    &:not(:nth-last-child(3n)) {
+      margin-left: 30px;
+    }
   }
 }
 
