@@ -121,7 +121,7 @@
             </ul>
         
             <ul class="list project__list">
-                <li class="project__item project__shadow">
+                <li class="project-item project__shadow">
                     <div class="project-item-wrap">
                     <source srcset="
                             ./images/portfolio/portfolio1.jpg 1x,
@@ -342,55 +342,58 @@
             <div class="footer__first">
                 <div class="footer__logo">
                     <a class="text link footer__link" href="">Web<span class="footer-logo__second">Studio</span></a>
+    
+                    <address>
+                        <ul class="list footer__list">
+                            <li class="footer__item">
+                                <a class="text link footer__map footer__light" href="https://goo.gl/maps/rudogCTzhb6VEt387"
+                                    target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="text link footer__tel footer__light" href="tel:+380991111111">+38 099 111 11
+                                    11</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="text link footer__mail footer__light"
+                                    href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                        </ul>
+                    </address>
                 </div>
-                <address>
-                    <ul class="list footer__list">
-                        <li class="footer__item">
-                            <a class="text link footer__map footer__light" href="https://goo.gl/maps/rudogCTzhb6VEt387"
-                                target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+    
+                <div class="footer__second">
+                    <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+                    <ul class="footer-social__list list">
+                        <li class="social__item">
+                            <a href="" class="social__link link__backgrong">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a class="text link footer__tel footer__light" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social__item">
+                            <a href="" class="social__link link__backgrong">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a class="text link footer__mail footer__light"
-                                href="mailto:info@example.com">info@example.com</a>
+                        <li class="social__item">
+                            <a href="" class="social__link link__backgrong">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link link__backgrong">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__second">
-                <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <ul class="footer-social__list list">
-                    <li class="social__item">
-                        <a href="" class="social__link link__backgrong">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link__backgrong">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link__backgrong">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link__backgrong">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer__third">
                 <h2 class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
@@ -406,14 +409,16 @@
                 </ul>
             </div>
             <div class="footer__four">
-                <h2 class="footer-title__first"> </h2>
+                <h2 class="footer-title__first is-hidden"> sasa </h2>
                 <button type="button" class="pointer footer__btn">Подписаться
                     <span class="footer-social-icon__first"><svg class="" width="24" height="24">
                             <use href="./images/icons.svg#icon-iconsend"></use>
                         </svg></span></button>
             </div>
+    
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

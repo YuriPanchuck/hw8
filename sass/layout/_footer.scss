@@ -2,28 +2,49 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
 }
 .footer__container {
-  @include tel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding-right: 89px;
+    padding-left: 76px;
   }
 
-  @include tab {
-  }
-  @include desk {
+  @media screen and (min-width: 1200px) {
     display: flex;
+    // align-items: baseline;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
+
 .footer__first {
-  align-items: center;
-  justify-content: center;
-  // margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    // margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+
+  // align-items: center;
+  // justify-content: center;
+  // // margin-right: 70px;
 }
 .footer__list {
-  width: 231px;
+  // width: 231px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 .footer__link {
   font-family: "Raleway", sans-serif;
@@ -33,11 +54,11 @@
   // line-height: 1.19;
   // letter-spacing: 0.03em;
   color: var(--accent-color);
-  @include tel {
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
+  // @include tel {
+  //   display: block;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 }
 .footer__map {
   font-family: inherit;
@@ -47,6 +68,11 @@
   // line-height: 1.71;
   // letter-spacing: 0.03em;
   color: var(--first-title-color);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer__tel,
 .footer__mail {
@@ -71,7 +97,18 @@
   }
 }
 .footer__logo {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  // margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+.footer__logo:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
@@ -80,8 +117,19 @@
   vertical-align: baseline;
 }
 .footer__third {
-  vertical-align: baseline;
-  margin-left: 93px;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    vertical-align: baseline;
+    margin-left: 93px;
+    text-align: start;
+  }
 }
 
 .footer__item {
@@ -91,12 +139,18 @@
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-social__list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .link__backgrong {
   background-color: rgba(255, 255, 255, 0.1);
@@ -104,14 +158,21 @@
 }
 
 .footer__four {
-  vertical-align: baseline;
-  margin-left: 12px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    // vertical-align: baseline;
+    margin-left: 12px;
+  }
+  // vertical-align: baseline;
+  // margin-left: 12px;
 }
 .footer-title__first {
-  margin-bottom: 36px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+  }
 }
 .form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid#999999;
   background-color: #2f303a;
@@ -120,8 +181,12 @@
   color: #ffffff;
   outline: none;
   transition: border-color 500ms;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer__title {
+  text-align: center;
   font-weight: bold;
   @include font(14px, null, 1.14, 0.03em);
   // font-size: 14px;
@@ -130,6 +195,9 @@
   text-transform: uppercase;
   color: var(--btn-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-social-icon__first {
   fill: currentColor;

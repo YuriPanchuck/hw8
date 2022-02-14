@@ -10,12 +10,9 @@
   justify-content: center;
   @media screen and (min-width: 480px) {
     display: flex;
-    // flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: left;
-    width: calc(100% / 2 - 30px);
-    &:not(:nth-last-child(3n)) {
-      margin-left: 30px;
-    }
   }
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -35,4 +32,5 @@
 
 .portfolio-button__list:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
