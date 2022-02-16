@@ -914,10 +914,6 @@ body {
   }
 }
 
-.hero__item {
-  margin-right: 30px;
-}
-
 @media screen and (min-width: 480px) {
   .hero__item {
     margin-bottom: 30px;
@@ -940,6 +936,7 @@ body {
   .hero__item {
     width: calc(100% / 4 - 30px);
     margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
