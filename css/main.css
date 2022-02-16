@@ -101,6 +101,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
+    padding-left: 15px;
   }
 }
 
