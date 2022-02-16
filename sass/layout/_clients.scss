@@ -1,6 +1,14 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   // font-weight: bold;
@@ -11,16 +19,16 @@
 
   color: var(--third-title-color);
   // margin-bottom: 50px;
-  @include tel {
-    @include font(28px, 700, 1.17, 0.03em);
-    margin-bottom: 30px;
-  }
 
-  @include tab {
+  @media screen and (min-width: 480px) {
     @include font(28px, 700, 1.17, 0.03em);
     margin-bottom: 30px;
   }
-  @include desk {
+  @media screen and (min-width: 768px) {
+    @include font(28px, 700, 1.17, 0.03em);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     @include font(36px, 700, 1.17, 0.03em);
     margin-bottom: 50px;
   }
@@ -45,6 +53,9 @@
   align-items: center;
   margin-left: 30px;
   margin-bottom: 30px;
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
   & + & {
     margin-left: 30px;
   }
@@ -55,6 +66,9 @@
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 .clients-social__icon {

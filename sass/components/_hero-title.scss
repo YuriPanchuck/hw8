@@ -9,6 +9,9 @@
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .hero-after__title {
   @include font(14px, null, 1.71, 0.03em);

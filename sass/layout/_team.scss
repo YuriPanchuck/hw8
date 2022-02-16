@@ -7,28 +7,31 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  // @include desk {
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
+  text-align: center;
+
+  color: var(--third-title-color);
+  margin-bottom: 30px;
+
   @include font(28px, 500, 1.17, 0.03em);
   @media screen and (min-width: 768px) {
     @include font(28px, 700, 1.17, 0.03em);
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     @include font(36px, 700, 1.17, 0.03em);
+    margin-bottom: 50px;
   }
 
   // font-weight: bold;
   // font-size: 36px;
   // line-height: 1.17;
   // letter-spacing: 0.03em;
-  text-align: center;
-
-  color: var(--third-title-color);
-  margin-bottom: 50px;
 }
 .team__name {
   @include font(16px, 500, 1.19, 0.03em);
